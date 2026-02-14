@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ea04d248-7951-4f85-be88-69c988136720",
+    "title": "No Internet",
+    "description": "Office internet is not working for all employees",
+    "category": "IT",
+    "severity": "HIGH",
+    "status": "RESOLVED",
+    "reportedAt": "2026-02-13T22:43:28.361Z"
+  },
+  {
+    "id": "aa3672c8-4e78-4dd8-9444-3a662148c98d",
+    "title": "Water Leakage",
+    "description": "Water dripping from ceiling near electrical panels causing safety hazard.",
+    "category": "SAFETY",
+    "severity": "HIGH",
+    "status": "ARCHIVED",
+    "reportedAt": "2026-02-14T00:03:28.561Z"
+  },
+  {
+    "id": "31050a74-a5fc-4f6b-8183-09eaff3fe7f0",
+    "title": "Printer not responding",
+    "description": "Printer in HR department is not printing documents from any computer.",
+    "category": "IT",
+    "severity": "MEDIUM",
+    "status": "OPEN",
+    "reportedAt": "2026-02-14T00:04:18.241Z"
+  },
+  {
+    "id": "a03f8dcf-dad1-44b8-ba95-207d5f8c0338",
+    "title": "Air conditioning not working",
+    "description": "Office temperature is too high because the air conditioning system stopped functioning.",
+    "category": "FACILITIES",
+    "severity": "MEDIUM",
+    "status": "OPEN",
+    "reportedAt": "2026-02-14T00:05:27.895Z"
+  },
+  {
+    "id": "c5077f70-9a6d-4fd5-bdbe-26e6ecdd51bb",
+    "title": "Employee cannot login to system",
+    "description": "User account locked after multiple failed login attempts and cannot access work applications.",
+    "category": "IT",
+    "severity": "MEDIUM",
+    "status": "OPEN",
+    "reportedAt": "2026-02-14T00:08:14.406Z"
+  }
+]
