@@ -1,0 +1,23 @@
+<section class="card">
+  <div class="card-header">
+    <h2>Client Details</h2>
+  </div>
+
+  <div class="muted" ng-if="loading">Loading...</div>
+  <p class="error" ng-if="error">{{ error }}</p>
+
+  <div ng-if="client && !loading">
+    <div class="grid">
+      <div><span class="muted">ID</span><div><strong>{{ client.id }}</strong></div></div>
+      <div><span class="muted">Full Name</span><div><strong>{{ client.fullName }}</strong></div></div>
+      <div><span class="muted">Email</span><div><strong>{{ client.email }}</strong></div></div>
+      <div><span class="muted">Risk</span><div><span class="pill">{{ client.riskCategory }}</span></div></div>
+      <div><span class="muted">Created Date</span><div><strong>{{ client.createdDate }}</strong></div></div>
+    </div>
+
+    <div class="row gap" style="margin-top: 16px">
+      <button class="btn" ng-click="goEdit()">Edit</button>
+      <button class="btn btn-ghost" ng-click="goBack()">Back</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+<section class="card">
+  <div class="card-header">
+    <h2>Clients</h2>
+    <div class="muted" ng-if="storage">Storage: {{ storage }}</div>
+  </div>
+
+  <div class="row gap">
+    <input class="input" type="text" placeholder="Search name/email/id" ng-model="filter.q" />
+    <select class="input" ng-model="filter.risk">
+      <option value="">All risk categories</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+    <button class="btn" ng-click="refresh()" ng-disabled="loading">Refresh</button>
+  </div>
+
+  <p class="error" ng-if="error">{{ error }}</p>
+
+  <div class="muted" ng-if="loading">Loading...</div>
+
+  <table class="table" ng-if="!loading">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Risk</th>
+        <th>Created</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="c in filteredClients()">
+        <td>{{ c.id }}</td>
+        <td>{{ c.fullName }}</td>
+        <td>{{ c.email }}</td>
+        <td><span class="pill">{{ c.riskCategory }}</span></td>
+        <td>{{ c.createdDate }}</td>
+        <td>
+          <button class="btn btn-small" ng-click="view(c.id)">View</button>
+        </td>
+      </tr>
+      <tr ng-if="filteredClients().length === 0">
+        <td colspan="6" class="muted">No clients found.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="muted">Total clients: {{ total }}</div>
+</section>

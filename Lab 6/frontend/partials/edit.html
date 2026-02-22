@@ -1,0 +1,35 @@
+<section class="card">
+  <div class="card-header">
+    <h2>Edit Client</h2>
+  </div>
+
+  <div class="muted" ng-if="loading">Loading...</div>
+  <p class="error" ng-if="error">{{ error }}</p>
+
+  <div class="form" ng-if="!loading && form">
+    <label>
+      Full Name
+      <input class="input" type="text" ng-model="form.fullName" />
+    </label>
+
+    <label>
+      Email
+      <input class="input" type="email" ng-model="form.email" />
+    </label>
+
+    <label>
+      Risk Category
+      <select class="input" ng-model="form.riskCategory">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </label>
+
+    <div class="row gap">
+      <button class="btn" ng-click="save()" ng-disabled="saving">Save</button>
+      <button class="btn btn-danger" ng-click="remove()" ng-disabled="saving">Delete</button>
+      <a class="btn btn-ghost" href="#/">Cancel</a>
+    </div>
+  </div>
+</section>
