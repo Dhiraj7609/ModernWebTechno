@@ -1,0 +1,16 @@
+[
+  {
+    "documentId": "231d9514-e2eb-4fb5-8014-45fc081153bc",
+    "ownerId": "3a278ba2-44f8-4ed2-978c-236ac85945ff",
+    "creationDate": "2026-03-18T18:25:33.354Z",
+    "lastUpdatedDate": "2026-03-18T18:25:33.354Z"
+  },
+  {
+    "documentId": "0f1f7c37-2d25-4a03-a15b-ac4c3856b9b4",
+    "title": "Lab 7 Document",
+    "description": "SecureDocs test",
+    "ownerId": "3a278ba2-44f8-4ed2-978c-236ac85945ff",
+    "creationDate": "2026-03-18T18:26:01.580Z",
+    "lastUpdatedDate": "2026-03-18T18:26:01.580Z"
+  }
+]
